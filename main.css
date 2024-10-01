@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(./image/Simple\ Shiny.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.section-main{
+    width: 69%;
+    height: 200px;
+    font-weight: bold;
+}
+.section-main p{
+    font-size: 60px;
+    color: white;
+}
+.section-main .modal-show{
+    width: 260px;
+    height: 80px;
+    font-size: 23px;
+    border: unset;
+    background-color: whitesmoke;
+}
+.modal-show:hover{
+    background-color: rgb(150, 138, 202);
+    transition: all linear 200ms;
+}
+.modal{
+    width: 65%;
+    height: 420px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    position: absolute;
+    top: 290px;
+    left: 290px;
+    display: none;
+    animation: run;
+    animation-fill-mode: forwards;
+}
+.modal img{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 35px;
+}
+.modal img:hover{
+    background-color: rgb(195, 93, 94);
+    transition: all linear 300ms;
+}
+.modal p:nth-of-type(1){
+    font-size: 20px;
+    word-spacing: 5px;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+}
+.modal p:nth-of-type(2){
+    font-size: 20px;
+    word-spacing: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 500px;
+    color: red;
+}
+.blur{
+    backdrop-filter: blur(10px);
+    transition: all linear 200ms;
+}
